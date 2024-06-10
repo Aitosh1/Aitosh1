@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediker - Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation Bar -->
+<style>
+    .navbar {
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff; /* Цвет фона меню */
+        z-index: 1000; /* Позволяет меню быть поверх других элементов */
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li {
+        margin-left: 20px;
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        margin-right: auto; /* Помещает бренд слева */
+    }
+</style>
+</head>
+<body>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraLife+</title>
+    <link rel="stylesheet" href="style(main).css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container d-flex justify-content-between align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.ibb.co.com/WK2nJHQ/photo-5415618456910420461-x-1.jpg" alt="Медикер" style="height: 40px;">
+                Медикер
+            </a>
+            <audio id="navAudio" src="multyashnyiy-zvuk-najatiya-na-knopku-30362.mp3" preload="auto"></audio>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html" onclick="playNavigationSound()">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" onclick="playNavigationSound()">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html" onclick="playNavigationSound()">Услуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" onclick="playNavigationSound()">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html" onclick="playNavigationSound()">Викторина</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="switchLanguage('en'); playNavigationSound()">EN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="switchLanguage('ru'); playNavigationSound()">RU</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container my-5 pt-5">
+    <h1 class="text-center mb-4">Mediker Quiz</h1>
+    <div id="quiz" class="mx-auto" style="max-width: 600px;">
+        <!-- Question 1 -->
+        <div class="quiz-question">
+            <h3>1. Which specialist treats cardiovascular diseases?</h3>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q1" id="q1-a" value="a">
+                <label class="form-check-label" for="q1-a">Neurologist</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q1" id="q1-b" value="b">
+                <label class="form-check-label" for="q1-b">Cardiologist</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q1" id="q1-c" value="c">
+                <label class="form-check-label" for="q1-c">Dermatologist</label>
+            </div>
+        </div>
+        <!-- Question 2 -->
+        <div class="quiz-question">
+            <h3>2. Which of the following services is not provided by Mediker?</h3>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q2" id="q2-a" value="a">
+                <label class="form-check-label" for="q2-a">Diagnostic</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q2" id="q2-b" value="b">
+                <label class="form-check-label" for="q2-b">Psychotherapy</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q2" id="q2-c" value="c">
+                <label class="form-check-label" for="q2-c">Legal consultations</label>
+            </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="quiz-question">
+            <h3>3. What is part of our mission?</h3>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q3" id="q3-a" value="a">
+                <label class="form-check-label" for="q3-a">Providing quality medical services</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q3" id="q3-b" value="b">
+                <label class="form-check-label" for="q3-b">Ensuring affordable housing</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q3" id="q3-c" value="c">
+                <label class="form-check-label" for="q3-c">Organizing cultural events</label>
+            </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="quiz-question">
+            <h3>4. How often is a general medical examination recommended?</h3>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q4" id="q4-a" value="a">
+                <label class="form-check-label" for="q4-a">Every 6 months</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q4" id="q4-b" value="b">
+                <label class="form-check-label" for="q4-b">Once a year</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q4" id="q4-c"
+                       value="c">
+                <label class="form-check-label" for="q4-c">Every 3 years</label>
+            </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="quiz-question">
+            <h3>5. What equipment is used for diagnosing heart diseases?</h3>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q5" id="q5-a" value="a">
+                <label class="form-check-label" for="q5-a">Ultrasound</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q5" id="q5-b" value="b">
+                <label class="form-check-label" for="q5-b">X-ray</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="q5" id="q5-c" value="c">
+                <label class="form-check-label" for="q5-c">ECG</label>
+            </div>
+        </div>
+        <!-- Submit Button -->
+        <button id="submitQuiz" class="btn btn-primary mt-4">Submit</button>
+        <!-- Result -->
+        <div id="result" class="mt-4"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5>About Us</h5>
+                <p>Mediker - your trusted partner in healthcare. We care about your well-being and offer quality services.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5>Contacts</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                    <li><i class="fas fa-envelope"></i> info@mediker.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Moscow, Primernaya St., 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3 bg-light">
+        © 2024 Mediker. All rights reserved.
+    </div>
+</footer>
+
+<!-- JS scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="quiz.js"></script>
+</body>
+<script>
+    function switchLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'quiz-en.html'; // Перенаправляем на англоязычную версию сайта
+        } else if (language === 'ru') {
+            window.location.href = 'quiz.html'; // Возвращаемся к русскоязычной версии сайта
+        }
+    }
+</script>
+</html>
